@@ -1,0 +1,215 @@
+\documentclass[letterpaper]{article}
+\usepackage{latexsym}
+\usepackage{amsbsy}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{cancel}
+\usepackage{graphicx}
+\title{A Synopsis of Special Relativity}
+\begin{document}
+\maketitle
+\noindent
+Relativity has been studied for the past one-hundred years.  This is
+generic derivation of Special Relativity.\\\\
+Special Relativity was developed by three prominent Physicsists and
+Mathematicians.
+\begin{enumerate}
+\item Einstien
+\item Lorentz
+\item Poincar\'e
+\end{enumerate}
+Later, after originally published, Special Relativity was studied by
+Minkowski.\\\\
+This paper is a synopsis of the Mathematical Derivation of Special
+Relativity.  The derivation is taking directly from Maxwell's
+equations of Light, using the Gallilean Transform (Gallilean
+Relativity).
+\section{The Gallilean Transform}
+The Gallilean Transform consists of the following equations:
+\begin{align*}
+x^\prime &= x-vt\\
+y^\prime &= y\\
+z^\prime &= z\\
+t^\prime &= t
+\end{align*}
+And
+\begin{align*}
+x &= x^\prime+vt\\
+y &= y^\prime\\
+z &= z^\prime\\
+t &= t^\prime
+\end{align*}
+Where the ``prime" frame is the frame of motion and the non-``prime"
+frame is the ``stationary" frame.\\\\
+As postulated by Einstein, there is \underline{no} ``stationary"
+frame.  Hence, this idea is merely a basic understanding of the
+difference between the observer in motion vs. the stationary observer.
+For the purposes of this paper, the stationary
+observer is the observer that ``sees" the other observer in motion.
+\\\\
+\section{Maxwell's Equations}
+Simplistic version of Maxwell's equation is as follows:
+\begin{equation*}
+\nabla^2\varphi = \frac{1}{c^2}\frac{\partial^2\varphi}{\partial t^2}
+\end{equation*}
+\section{Gallilean Relativity into Maxwell's Equations}
+Putting Gallilean Transforms into Maxwell's Equations, the equations
+are the following:
+\begin{align*}
+\frac{\partial\varphi}{\partial x} &= \frac{\partial\varphi}{\partial x^\prime}\cancelto{1}{\frac{\partial x^\prime}{\partial x}}
++\cancelto{0}{\frac{\partial\varphi}{\partial y^\prime}\frac{\partial y^\prime}{\partial x}}
++\cancelto{0}{\frac{\partial\varphi}{\partial z^\prime}\frac{\partial z^\prime}{\partial x}}
++\cancelto{0}{\frac{\partial\varphi}{\partial t^\prime}\frac{\partial t^\prime}{\partial x}}
+\\\therefore
+\frac{\partial\varphi}{\partial x} &= \frac{\partial\varphi}{\partial x^\prime}
+\end{align*}
+And hence:
+\begin{align*}
+\frac{\partial^2\varphi}{\partial x^2} &= \frac{\partial^2\varphi}{\partial x^{\prime 2}}
+\end{align*}
+\begin{align*}
+\frac{\partial\varphi}{\partial y} &= \cancelto{0}{\frac{\partial\varphi}{\partial x^\prime}\frac{\partial x^\prime}{\partial y}}
++\frac{\partial\varphi}{\partial y^\prime}\cancelto{1}{\frac{\partial y^\prime}{\partial y}}
++\cancelto{0}{\frac{\partial\varphi}{\partial z^\prime}\frac{\partial z^\prime}{\partial y}}
++\cancelto{0}{\frac{\partial\varphi}{\partial t^\prime}\frac{\partial t^\prime}{\partial y}}
+\\\therefore
+\frac{\partial\varphi}{\partial y} &= \frac{\partial\varphi}{\partial y^\prime}
+\end{align*}
+And hence:
+\begin{align*}
+\frac{\partial^2\varphi}{\partial y^2} &= \frac{\partial^2\varphi}{\partial y^{\prime 2}}
+\end{align*}
+\begin{align*}
+\frac{\partial\varphi}{\partial z} &= \cancelto{0}{\frac{\partial\varphi}{\partial x^\prime}\frac{\partial x^\prime}{\partial z}}
++\cancelto{0}{\frac{\partial\varphi}{\partial y^\prime}\frac{\partial y^\prime}{\partial z}}
++\frac{\partial\varphi}{\partial z^\prime}\cancelto{1}{\frac{\partial z^\prime}{\partial z}}
++\cancelto{0}{\frac{\partial\varphi}{\partial t^\prime}\frac{\partial t^\prime}{\partial z}}
+\\\therefore
+\frac{\partial\varphi}{\partial z} &= \frac{\partial\varphi}{\partial z^\prime}
+\end{align*}
+And hence:
+\begin{align*}
+\frac{\partial^2\varphi}{\partial z^2} &= \frac{\partial^2\varphi}{\partial z^{\prime 2}}
+\end{align*}
+\begin{align*}
+\frac{\partial\varphi}{\partial t} &= \frac{\partial\varphi}{\partial x^\prime}\cancelto{-v}{\frac{\partial x^\prime}{\partial t}}
++\cancelto{0}{\frac{\partial\varphi}{\partial y^\prime}\frac{\partial y^\prime}{\partial t}}
++\cancelto{0}{\frac{\partial\varphi}{\partial z^\prime}\frac{\partial z^\prime}{\partial t}}
++\frac{\partial\varphi}{\partial t^\prime}\cancelto{1}{\frac{\partial t^\prime}{\partial t}}
+\\\therefore
+\frac{\partial\varphi}{\partial t} &= \frac{\partial\varphi}{\partial t^\prime}-v\frac{\partial\varphi}{\partial x^\prime}
+\bigg\}\alpha
+\end{align*}
+Thus:
+\begin{align*}
+\frac{\partial\varphi^2}{\partial t^2} &= \frac{\partial [\alpha]}{\partial t} =
+\frac{\partial[\alpha]}{\partial x^\prime}\frac{\partial x^\prime}{\partial t} +
+\frac{\partial[\alpha]}{\partial t^\prime}\frac{\partial t^\prime}{\partial t}
+\\
+\frac{\partial\varphi^2}{\partial t^2} &=
+\frac{\partial[\alpha]}{\partial x^\prime}\cancelto{-v}{\frac{\partial x^\prime}{\partial t}} +
+\frac{\partial[\alpha]}{\partial t^\prime}\cancelto{1}{\frac{\partial t^\prime}{\partial t}}
+\\
+\frac{\partial\varphi^2}{\partial t^2} &=
+\frac{\partial[\alpha]}{\partial t^\prime}-
+v\frac{\partial[\alpha]}{\partial x^\prime}
+\\
+\frac{\partial\varphi^2}{\partial t^2} &=
+\frac{\partial}{\partial t^\prime}[\frac{\partial\varphi}{\partial t^\prime}-v\frac{\partial\varphi}{\partial x^\prime}]
+-v\frac{\partial}{\partial x^\prime}[\frac{\partial\varphi}{\partial t^\prime}-v\frac{\partial\varphi}{\partial x^\prime}]
+\\
+\frac{\partial^2\varphi}{\partial t^2} &=
+\frac{\partial^2\varphi}{\partial t^{\prime 2}}
+-2v\frac{\partial\varphi^2}{\partial x \partial t^\prime}
++v^2\frac{\partial^2\varphi}{\partial x^{\prime 2}}
+\\
+\frac{1}{c^2}\frac{\partial^2\varphi}{\partial t^2} &=
+\frac{1}{c^2}\frac{\partial^2\varphi}{\partial t^{\prime 2}}
+-\frac{2v}{c^2}\frac{\partial\varphi^2}{\partial x \partial t^\prime}
++\frac{v^2}{c^2}\frac{\partial^2\varphi}{\partial x^{\prime 2}}
+\end{align*}
+Which follows:
+\begin{align*}
+\frac{\partial^2\varphi}{\partial x^{\prime 2}} +
+\frac{\partial^2\varphi}{\partial y^{\prime 2}} +
+\frac{\partial^2\varphi}{\partial z^{\prime 2}} &=
+\frac{1}{c^2}\frac{\partial^2\varphi}{\partial t^{\prime 2}}
+-\frac{2v}{c^2}\frac{\partial\varphi^2}{\partial x \partial t^\prime}
++\frac{v^2}{c^2}\frac{\partial^2\varphi}{\partial x^{\prime 2}}
+\\\therefore
+(1-\frac{v^2}{c^2})\frac{\partial^2\varphi}{\partial x^{\prime 2}} +
+\frac{\partial^2\varphi}{\partial y^{\prime 2}} +
+\frac{\partial^2\varphi}{\partial z^{\prime 2}} +
+\frac{2v}{c^2}\frac{\partial\varphi^2}{\partial x \partial t^\prime}
+&= \frac{1}{c^2}\frac{\partial^2\varphi}{\partial t^{\prime 2}}
+\end{align*}
+$
+\boxed{
+(1-\frac{v^2}{c^2})\frac{\partial^2\varphi}{\partial x^{\prime 2}} +
+\frac{\partial^2\varphi}{\partial y^{\prime 2}} +
+\frac{\partial^2\varphi}{\partial z^{\prime 2}} +
+\frac{2v}{c^2}\frac{\partial\varphi^2}{\partial x \partial t^\prime}
+= \frac{1}{c^2}\frac{\partial^2\varphi}{\partial t^{\prime 2}}}
+$
+\\
+\begin{center}
+\fbox{\parbox{200pt}{
+This shows that plugging in Galilean Relativity into
+Maxwell's Equations \textbf{is not} invariant.  This shows a problem
+with the equations as related to Galilean Relativity.}}
+\end{center}
+Under the given situation of non-invariance, the question arises what
+would the relativistic equations be to make Maxwell's equations
+invariant?\\\\
+From a mathematical point of view, the answer lies in the expression:
+$
+\boxed{
+\frac{2v}{c^2}\frac{\partial\varphi^2}{\partial x \partial t^\prime}}
+$
+Which would imply a direct \textbf{relation to time and space}.
+\section{A Correction to Galilean Relatity}
+Based on the section above, a new set of Relativity equations need to
+be developed in such a way as to ensure invariance between reference
+frames.
+\begin{align*}
+x^\prime &= Ax + Bvt\\
+y^\prime &= y\\
+z^\prime &= z\\
+t^\prime &= Dt + Ex
+\end{align*}
+Letting $x^\prime = 0$, $x = vt$, and $-Avt = Bvt$\\
+$\therefore B = -A$ and
+\begin{align*}
+x^\prime &= A(x - vt)
+\end{align*}
+with:
+\begin{align*}
+t^\prime &= Dt + Ex
+\end{align*}
+These equations can be substituted into Maxwell's equations in the
+similar way as previous.
+\begin{align*}
+\frac{\partial\varphi}{\partial x} &=
+\frac{\partial\varphi}{\partial x^\prime}\cancelto{A}{\frac{\partial x^\prime}{\partial x}}
++\cancelto{0}{\frac{\partial\varphi}{\partial y^\prime}\frac{\partial y^\prime}{\partial x}}
++\cancelto{0}{\frac{\partial\varphi}{\partial z^\prime}\frac{\partial z^\prime}{\partial x}}
++\frac{\partial\varphi}{\partial t^\prime}\cancelto{E}{\frac{\partial t^\prime}{\partial x}}
+\\\therefore
+\frac{\partial\varphi}{\partial x} &= A\frac{\partial\varphi}{\partial x^\prime} +
+E\frac{\partial\varphi}{\partial t^\prime}\bigg\}\alpha
+\end{align*}
+Since $y^\prime = y$ and $z^\prime = z$, there is no change to these
+original equations.
+\begin{align*}
+\frac{\partial\varphi}{\partial t} &=
+\frac{\partial\varphi}{\partial x^\prime}\cancelto{-Av}{\frac{\partial x^\prime}{\partial t}}
++\cancelto{0}{\frac{\partial\varphi}{\partial y^\prime}\frac{\partial y^\prime}{\partial t}}
++\cancelto{0}{\frac{\partial\varphi}{\partial z^\prime}\frac{\partial z^\prime}{\partial t}}
++\frac{\partial\varphi}{\partial t^\prime}\cancelto{E}{\frac{\partial t^\prime}{\partial t}}
+\\\therefore
+\frac{\partial\varphi}{\partial t} &=
+E\frac{\partial\varphi}{\partial t^\prime} -
+Av\frac{\partial\varphi}{\partial x^\prime}\bigg\}\beta
+\end{align*}
+Which leads to:
+\end{document}
