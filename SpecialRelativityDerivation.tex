@@ -1,0 +1,410 @@
+%\documentclass[letterpaper]{article}
+\documentclass[journal]{IEEEtran}
+\usepackage{latexsym}
+\usepackage{amsbsy}
+\usepackage{graphicx}
+\usepackage{enumerate}
+\usepackage{amsmath}
+\usepackage[makeroom]{cancel}
+\begin{document}
+\title{A Derivation of Special Relativity}
+\author{Lou Rosas}
+\maketitle
+\noindent
+\begin{abstract}
+Special Relativity, while giving credit mainly to Albert Einstein, 
+was the work of additional mathematicians and Scientists including:  
+Hendrik Lorentz, Henri Poincar\'e, and Herman Minkowski.  While all of
+these notable physicists and mathematicians are credited for work (it
+is the work of Lorentz who originally developed the transforms),
+Einstein is given credit for actual ``concept" of Special Relativity.
+This paper is a summation of my personal studies (for the past twenty
+eight years) in the subject.
+\end{abstract}
+\section{A Short History}
+Special Relativity starts in part with the work of Maxwell's Equations
+of Light.  In those equations, Maxwell shows that
+\begin{enumerate}
+\item Light is an electromagnetic wave
+\item The Speed of light is a constant based on the wave equation
+\begin{enumerate}
+\item This was originally predicted in the general wave equation
+\item From the equation we see the speed of light is:
+$c = \frac{1}{\sqrt{\epsilon_0\mu_0}}$ where $\epsilon_0$ is the
+permitivity of free space and $\mu_0$ is the permeability of free space
+\end{enumerate}
+\end{enumerate}
+Hertz would later confirm what Maxwell theorized mathematically.
+There were still several issues related to the work of Maxwell.  Of
+particular interrest in this subject were the
+\begin{enumerate}
+\item Prediction and verification of the Lumiferous Aether--the
+theoretical non-viscous medium that allows light (in the form of
+waves)to travel through
+free space
+\item The Absolute Reference Frame--required to hold that time is
+absolute for every observer regardless of referece frame as predicted
+by Newton
+\end{enumerate}
+\subsection{The Search for the Speed of Light}
+The search for the Speed of Light proceded in the late 19th-century.
+In 1887, an experiment was done by Albert Michelson and Edward
+Morely to determine several factors related to light this included:
+\begin{enumerate}
+\item The verification of the existence the aether
+\item The first determination of the speed of light: $c$
+\begin{enumerate}
+\item From this, the values of $\epsilon_0$ and $\mu_0$ could be
+better acertained
+\end{enumerate}
+\end{enumerate}
+\subsubsection{The Results for the Michelson-Morley Experiment}
+The Michelson-Morely experiment showed no evidence of the aether.
+\\\\In
+addition, the Michelson-Morely experiment showeed the speed of light
+measurement did not vary based on the speed \emph{relative} to the
+observer measuring the speed of light.
+\paragraph{What does that mean?}  As stated above the speed of light
+measured by the Michelson-Morely experiment was a constant and
+indifferent to the reference frame of the observer.  Essentially, that
+means that if an observer is going $.5c$ towards a light source, they
+will \emph{not} measure the speed of light from that light source to
+be $1.5c$, and if an
+observer is going $.5c$ away from a light source, they will \emph{not}
+measure the speed of light from that light source to be $.5c$; but
+rather $c$ in \emph{both}
+cases.
+\paragraph{Questions Answered but Left ``Unanswered}By nature, the
+wave equation \emph{shows} the wave's velocity is constant.  For
+light, Maxwell's equation \underline{directly} verifies the speed of
+light is a constant (see above), and that velocity of light is
+\emph{independent of reference frame}.  Yet, the Michelson-Morely
+experiment still had scientists confused and bewildered.  The main
+reason is due to the lack of the verifcation of the aether.  Maxwell's
+Equations were believed to work (or be valid) based on the aether.
+Afterwards, many scientists proposed the aether to be a non-viscous
+fluid:  that was not verified, regardless. As a
+result, while there was empirical evidence of the speed of light,
+one question was answered, this experiment created more questions.
+\subsection{The History of the Subject as Presented}
+As stated in the abstract, there were several scientists and
+mathematicians involved in the study and development of Special
+Relativity:  Einstein, Poincar\'e, Lorentz and (later) Minkowski.
+While all worked on the theory of Special Relativity, Einstein is
+given credit for the actual theory.  This is due to the fact that
+Einstein presented not only the mathematics of the theory (that was
+completed by Lorentz and Poincar\'e; Einstein working
+independently ``discovered" the same equations); rather, Einstein
+presented a physical description of the Special Theory of Relativity.
+Mainly, Einstein presented three postulates to the theory that neither
+Lorentz nor Poincar\'e presented:
+\begin{enumerate}
+\item The speed of light is a constant regardless of reference frame
+\item There is no aether
+\item (As a result from the above postulate) There is no absolute
+reference frame
+\end{enumerate}
+\subsection{The Mathematics Presented}
+The Mathematics derived in this paper are based on the work of
+several of the scientists and mathematicians that worked on the theory
+of Special Relativity:  Mainly Lorentz and Minkowski, as well as
+Einstein.  When credit is known, credit will be given as appropriate.
+\subsection{More History to follow}
+It should be noted even though there is a ``history" section, this is
+not meant to imply there will be no more history will follow in the
+process of the derivation.
+\section{Galillean Relativity}
+This paper starts with Galillean Relativity.\\
+The following are the equations commonly known as Galilean
+Relativity:\\\\
+\begin{eqnarray}
+x^\prime = x-vt\\
+y^\prime = y\\
+z^\prime = z\\
+t^\prime = t
+\end{eqnarray}
+and
+\begin{eqnarray}
+x = x^\prime+vt\\
+y = y^\prime\\
+z = z^\prime\\
+t = t^\prime
+\end{eqnarray}
+Where the prime values (prime frame) are the position values for the
+observer in the moving frame.\\
+In the history of the study of Special Relativity, plugging the
+Galillean Transforms (eqns 1-8) into Maxwell's Equations presented an
+odd anomaly that showed the transforms were non-invariant.  From a
+mathematical perspective, this seems to be the ``best place" to start
+the derivation presented in this paper.
+\subsection{Plugging Galillean Relativity into Maxwell's Equations}
+\subsubsection{Maxwell's Equations}
+From Maxwell, it was mathematically shown that light is an
+electromagnetic wave:
+\begin{eqnarray}
+\nabla^2E=\mu_0\epsilon_0\ddot{E}\\
+\nabla^2B=\mu_0\epsilon_0\ddot{B}
+\end{eqnarray}
+This can be written in the ``Generic Form" of the Wave Equation:
+\begin{equation}
+\nabla^2\varphi=\frac{1}{c^2}\frac{\partial^2 \varphi}{\partial t^2}
+\end{equation}
+Where
+\begin{equation}
+c = \frac{1}{\sqrt{\epsilon_0\mu_0}}
+\end{equation}
+and $\epsilon_0$ is the
+permitivity of free space and $\mu_0$ is the permeability of free
+space.
+\subsubsection{Putting Galillean Relativity Equations in Maxwell's
+equations}
+Using the equations:
+\begin{eqnarray}
+x^\prime = x-vt\\
+y^\prime = y\\
+z^\prime = z\\
+t^\prime = t
+\end{eqnarray}
+Given:
+\begin{equation}
+\nabla^2 = \frac{\partial^2}{\partial x^2} +  
+                   \frac{\partial^2}{\partial y^2} +
+                   \frac{\partial^2}{\partial z^2}
+\end{equation}
+From the chain rule of partial derivatives, it can be shown that:
+\begin{equation}
+\frac{\partial\varphi}{\partial x}=
+\frac{\partial\varphi}{\partial x^\prime}
+\cancelto{1}{\frac{\partial x^\prime}{\partial x}} +
+\cancelto{0}{\frac{\partial\varphi}{\partial y^\prime}
+\frac{\partial y^\prime}{\partial x}} +
+\cancelto{0}{\frac{\partial\varphi}{\partial z^\prime}
+\frac{\partial z^\prime}{\partial x}} +
+\cancelto{0}{\frac{\partial\varphi}{\partial t^\prime}
+\frac{\partial t^\prime}{\partial x}}
+\end{equation}
+Therefore:
+\begin{equation}
+\boxed{
+\frac{\partial\varphi}{\partial x} = 
+\frac{\partial\varphi}{\partial x^\prime}}
+\end{equation}
+\begin{equation}
+\boxed{
+Let \quad \alpha\equiv\frac{\partial\varphi}{\partial x^\prime}}
+\end{equation}
+Continuing, the same thing can be done for $y, z$ and $t$.
+\begin{equation}
+\frac{\partial\varphi}{\partial y}=
+\cancelto{0}{\frac{\partial\varphi}{\partial x^\prime}
+\frac{\partial x^\prime}{\partial y}} +
+\frac{\partial\varphi}{\partial y^\prime}
+\cancelto{1}{\frac{\partial y^\prime}{\partial y}} +
+\cancelto{0}{\frac{\partial\varphi}{\partial z^\prime}
+\frac{\partial z^\prime}{\partial y}} +
+\cancelto{0}{\frac{\partial\varphi}{\partial t^\prime}
+\frac{\partial t^\prime}{\partial y}}
+\end{equation}
+Therefore:
+\begin{equation}
+\boxed{
+\frac{\partial\varphi}{\partial y} = 
+\frac{\partial\varphi}{\partial y^\prime}}
+\end{equation}
+\begin{equation}
+\boxed{
+Let \quad \beta\equiv\frac{\partial\varphi}{\partial y^\prime}}
+\end{equation}
+\begin{equation}
+\frac{\partial\varphi}{\partial z}=
+\cancelto{0}{\frac{\partial\varphi}{\partial x^\prime}
+\frac{\partial x^\prime}{\partial z}} +
+\cancelto{0}{\frac{\partial\varphi}{\partial y^\prime}
+\frac{\partial y^\prime}{\partial z}} +
+\frac{\partial\varphi}{\partial z^\prime}
+\cancelto{1}{\frac{\partial z^\prime}{\partial z}} +
+\cancelto{0}{\frac{\partial\varphi}{\partial t^\prime}
+\frac{\partial t^\prime}{\partial z}}
+\end{equation}
+Therefore:
+\begin{equation}
+\boxed{
+\frac{\partial\varphi}{\partial z} = 
+\frac{\partial\varphi}{\partial z^\prime}}
+\end{equation}
+\begin{equation}
+\boxed{
+Let \quad \gamma\equiv\frac{\partial\varphi}{\partial z^\prime}}
+\end{equation}
+The partial with respect to $t$ is more tricky:
+\begin{equation}
+\frac{\partial\varphi}{\partial t}=
+\frac{\partial\varphi}{\partial x^\prime}
+\cancelto{-v}{\frac{\partial x^\prime}{\partial t}} +
+\cancelto{0}{\frac{\partial\varphi}{\partial y^\prime}
+\frac{\partial y^\prime}{\partial t}} +
+\cancelto{0}{\frac{\partial\varphi}{\partial z^\prime}
+\frac{\partial z^\prime}{\partial t}} +
+\frac{\partial\varphi}{\partial t^\prime}
+\cancelto{1}{\frac{\partial t^\prime}{\partial t}}
+\end{equation}
+\begin{equation}
+\boxed{
+\frac{\partial\varphi}{\partial t} = 
+\frac{\partial\varphi}{\partial t^\prime} - v\frac{\partial\varphi}
+{\partial x^\prime}}
+\end{equation}
+\begin{equation}
+\boxed{
+Let \quad \Delta\equiv\frac{\partial\varphi}{\partial t^\prime} -
+v\frac{\partial\varphi}{\partial x^\prime}}
+\end{equation}
+Using \underline{ $\alpha$} substitution from above:
+\begin{equation}
+\frac{\partial^2\varphi}{\partial x^2} = \frac{\partial}{\partial x}
+\left[\frac{\partial\varphi}{\partial x}\right] =
+\frac{\partial}{\partial x}
+\left[\frac{\partial\varphi}{\partial x^\prime}\right] =
+\frac{\partial\alpha}{\partial x}
+\end{equation}
+\begin{equation}
+\frac{\partial\alpha}{\partial x} =
+\frac{\partial\alpha}{\partial x^\prime}
+\cancelto{1}{\frac{\partial x^\prime}{\partial x}} +
+\cancelto{0}{\frac{\partial\alpha}{\partial y^\prime}
+\frac{\partial y^\prime}{\partial x}} +
+\cancelto{0}{\frac{\partial\alpha}{\partial z^\prime}
+\frac{\partial z^\prime}{\partial x}} +
+\cancelto{0}{\frac{\partial\alpha}{\partial t^\prime}
+\frac{\partial t^\prime}{\partial x}}
+\end{equation}
+\begin{equation}
+\frac{\partial\alpha}{\partial x} = \frac{\partial}{\partial x^\prime}
+\left[\frac{\partial\varphi}{\partial x^\prime}\right] =
+\frac{\partial^2\varphi}{\partial x^{\prime 2}}
+\end{equation}
+Therefore:
+\begin{equation}
+\boxed{
+\frac{\partial^2\varphi}{\partial x^2} = 
+\frac{\partial^2\varphi}{\partial x^{\prime 2}}}
+\end{equation}
+Using the \underline{$\beta$} substitution from above:
+\begin{equation}
+\frac{\partial^2\varphi}{\partial y^2} = \frac{\partial}{\partial y}
+\left[\frac{\partial\varphi}{\partial y}\right] =
+\frac{\partial}{\partial y}
+\left[\frac{\partial\varphi}{\partial y^\prime}\right] =
+\frac{\partial\beta}{\partial y}
+\end{equation}
+\begin{equation}
+\frac{\partial\beta}{\partial y} =
+\cancelto{0}{\frac{\partial\beta}{\partial x^\prime}
+\frac{\partial x^\prime}{\partial y}} +
+\frac{\partial\beta}{\partial y^\prime}
+\cancelto{1}{\frac{\partial y^\prime}{\partial y}} +
+\cancelto{0}{\frac{\partial\beta}{\partial z^\prime}
+\frac{\partial z^\prime}{\partial y}} +
+\cancelto{0}{\frac{\partial\beta}{\partial t^\prime}
+\frac{\partial t^\prime}{\partial y}}
+\end{equation}
+\begin{equation}
+\frac{\partial\beta}{\partial y} = \frac{\partial}{\partial y^\prime}
+\left[\frac{\partial\varphi}{\partial y^\prime}\right] =
+\frac{\partial^2\varphi}{\partial y^{\prime 2}}
+\end{equation}
+Therefore:
+\begin{equation}
+\boxed{
+\frac{\partial^2\varphi}{\partial y^2} = 
+\frac{\partial^2\varphi}{\partial y^{\prime 2}}}
+\end{equation}
+By the similarites above (using the \underline{$\gamma$}
+substitution):
+\begin{equation}
+\boxed{
+\frac{\partial^2\varphi}{\partial z^2} = 
+\frac{\partial^2\varphi}{\partial z^{\prime 2}}}
+\end{equation}
+Using $\Delta$ substitution:
+\begin{equation}
+\frac{\partial^2\varphi}{\partial t^2} = \frac{\partial}{\partial t}
+\left[\frac{\partial\varphi}{\partial t}\right]=
+\frac{\partial}{\partial t}
+\left[\frac{\partial\varphi}{\partial t^\prime} - 
+v\frac{\partial\varphi}{\partial x^\prime}
+\right] = \frac{\partial\Delta}{\partial t}
+\end{equation}
+\begin{equation}
+\frac{\partial\Delta}{\partial t} =
+\frac{\partial\Delta}{\partial x^\prime}
+\cancelto{-v}{\frac{\partial x^\prime}{\partial t}} +
+\cancelto{0}{\frac{\partial\Delta}{\partial y^\prime}
+\frac{\partial y^\prime}{\partial t}} +
+\cancelto{0}{\frac{\partial\Delta}{\partial z^\prime}
+\frac{\partial z^\prime}{\partial t}} +
+\frac{\partial\Delta}{\partial t^\prime}
+\cancelto{1}{\frac{\partial t^\prime}{\partial t}}
+\end{equation}
+\begin{equation}
+\frac{\partial\Delta}{\partial t} =
+\frac{\partial\Delta}{\partial t^\prime}
+- v \frac{\partial\Delta}{\partial x^\prime}
+\end{equation}
+\begin{equation}
+\frac{\partial\Delta}{\partial t} = 
+\frac{\partial}{\partial t^\prime}
+\left[\frac{\partial\varphi}{\partial t^\prime} -
+v\frac{\partial\varphi}{\partial x^\prime}\right] - v
+\frac{\partial}{\partial x^\prime}
+\left[\frac{\partial\varphi}{\partial t^\prime} -
+v\frac{\partial\varphi}{\partial x^\prime}\right]
+\end{equation}
+\begin{equation}
+\frac{\partial\Delta}{\partial t} = 
+v^2\frac{\partial^2\varphi}{\partial x^{\prime2}} - 2v
+\frac{\partial^2\varphi}{\partial x^\prime\partial t^\prime} +
+\frac{\partial^2\varphi}{\partial t^{\prime2}}
+\end{equation}
+Therefore:
+\begin{equation}
+\frac{\partial^2\varphi}{\partial t^2} =
+v^2\frac{\partial^2\varphi}{\partial x^{\prime2}} - 2v
+\frac{\partial^2\varphi}{\partial x^\prime\partial t^\prime} +
+\frac{\partial^2\varphi}{\partial t^{\prime2}}
+\end{equation}
+and:
+\begin{equation}
+\boxed{
+\frac{1}{c^2}\frac{\partial^2\varphi}{\partial t^2} =
+\frac{v^2}{c^2}\frac{\partial^2\varphi}{\partial x^{\prime2}} -
+\frac{2v}{c^2}
+\frac{\partial^2\varphi}{\partial x^\prime\partial t^\prime} +
+\frac{1}{c^2}\frac{\partial^2\varphi}{\partial t^{\prime2}}
+}
+\end{equation}
+Combining equations 33,37,38 and 45, equation 11 becomes:
+\begin{equation}
+\boxed{
+\frac{\partial^2\varphi}{\partial x^{\prime2}} +
+\frac{\partial^2\varphi}{\partial y^{\prime2}} +
+\frac{\partial^2\varphi}{\partial z^{\prime2}} =
+\frac{v^2}{c^2}\frac{\partial^2\varphi}{\partial x^{\prime2}} -
+\frac{2v}{c^2}
+\frac{\partial^2\varphi}{\partial x^\prime\partial t^\prime} +
+\frac{1}{c^2}\frac{\partial^2\varphi}{\partial t^{\prime2}}
+}
+\end{equation}
+or:
+\begin{equation}
+\boxed{
+\left(1 - \frac{v^2}{c^2}\right)
+\frac{\partial^2\varphi}{\partial x^2} +
+\frac{\partial^2\varphi}{\partial y^2} +
+\frac{\partial^2\varphi}{\partial z^2}  +
+\frac{2v}{c^2}
+\frac{\partial^2\varphi}{\partial x^\prime\partial t^\prime} =
+\frac{1}{c^2}\frac{\partial^2\varphi}{\partial t^{\prime2}}
+}
+\end{equation}
+\end{document}
