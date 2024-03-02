@@ -412,6 +412,23 @@ this:  the equations are non-invariant.\\\\The demonstration of
 non-invariace continues with the related derivation:
 \begin{equation}
 \frac{\partial\varphi}{\partial x^{\prime}} =
-\frac{\partial\varphi}{\partial x}\cancelto{1}{\frac{\partial x}{\partial x^\prime}}
+\frac{\partial\varphi}{\partial x}\cancelto{1}
+{\frac{\partial x}{\partial x^\prime}} +
+\cancelto{0}{\frac{\partial\varphi}{\partial y}
+\frac{\partial y}{\partial x^\prime}} +
+\cancelto{0}{\frac{\partial\varphi}{\partial z}
+\frac{\partial z}{\partial x^\prime}} +
+\cancelto{0}{\frac{\partial\varphi}{\partial t}
+\frac{\partial t}{\partial x^\prime}}
+\end{equation}
+\begin{equation}
+\boxed{
+Let\quad\alpha\equiv\frac{\partial\varphi}{\partial x} 
+}
+\end{equation}
+Continuing with $y^\prime$,$z^\prime$ and $t^\prime$:\\
+\begin{equation}
+\frac{\partial\varphi}{\partial y^{\prime}} =
+\cancelto{0}{\frac{\partial\varphi}{\partial x}\frac{\partial x}{\partial y^\prime}}
 \end{equation}
 \end{document}
