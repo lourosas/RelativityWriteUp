@@ -125,7 +125,7 @@ t^\prime = t
 \end{eqnarray}
 and
 \begin{eqnarray}
-x = x^\prime+vt\\
+x = x^\prime+vt^{\prime}\\
 y = y^\prime\\
 z = z^\prime\\
 t = t^\prime
@@ -429,6 +429,51 @@ Let\quad\alpha\equiv\frac{\partial\varphi}{\partial x}
 Continuing with $y^\prime$,$z^\prime$ and $t^\prime$:\\
 \begin{equation}
 \frac{\partial\varphi}{\partial y^{\prime}} =
-\cancelto{0}{\frac{\partial\varphi}{\partial x}\frac{\partial x}{\partial y^\prime}}
+\cancelto{0}{\frac{\partial\varphi}{\partial x}\frac{\partial x}
+{\partial y^\prime}} +
+\frac{\partial\varphi}{\partial y}\cancelto{1}{\frac{\partial y}
+{\partial y^{\prime}}} +
+\cancelto{0}{\frac{\partial\varphi}{\partial z}\frac{\partial z}
+{\partial y^{\prime}}} +
+\cancelto{0}{\frac{\partial\varphi}{\partial t}\frac{\partial t}
+{\partial y^{\prime}}}
+\end{equation}
+\begin{equation}
+\boxed{
+Let\quad\beta\equiv\frac{\partial\varphi}{\partial y}
+}
+\end{equation}
+\begin{equation}
+\frac{\partial\varphi}{\partial z^{\prime}} =
+\cancelto{0}{\frac{\partial\varphi}{\partial x}\frac{\partial x}
+{\partial z^\prime}} +
+\cancelto{0}{\frac{\partial\varphi}{\partial y}\frac{\partial y}
+{\partial z^{\prime}}} +
+\frac{\partial\varphi}{\partial z}\cancelto{1}{\frac{\partial z}
+{\partial z^{\prime}}} +
+\cancelto{0}{\frac{\partial\varphi}{\partial t}\frac{\partial t}
+{\partial z^{\prime}}}
+\end{equation}
+\begin{equation}
+\boxed{
+Let\quad\gamma\equiv\frac{\partial\varphi}{\partial z}
+}
+\end{equation}
+\begin{equation}
+\frac{\partial\varphi}{\partial t^{\prime}} =
+\frac{\partial\varphi}{\partial x}\cancelto{v}{\frac{\partial x}
+{\partial t^\prime}} +
+\cancelto{0}{\frac{\partial\varphi}{\partial y}\frac{\partial y}
+{\partial t^{\prime}}} +
+\cancelto{0}{\frac{\partial\varphi}{\partial z}\frac{\partial z}
+{\partial t^{\prime}}} +
+\frac{\partial\varphi}{\partial t}\cancelto{1}{\frac{\partial t}
+{\partial t^{\prime}}}
+\end{equation}
+\begin{equation}
+\boxed{
+Let\quad\Delta\equiv\frac{\partial\varphi}{\partial t} +
+v\frac{\partial\varphi}{\partial x}
+}
 \end{equation}
 \end{document}
