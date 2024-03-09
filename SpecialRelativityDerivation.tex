@@ -476,4 +476,30 @@ Let\quad\Delta\equiv\frac{\partial\varphi}{\partial t} +
 v\frac{\partial\varphi}{\partial x}
 }
 \end{equation}
+Again, using \underline{$\alpha$} substitution from 49:
+\begin{equation}
+\frac{\partial^2\varphi}{\partial x^{\prime 2}}=
+\frac{\partial}{\partial x^{\prime}}\left[\frac{\partial\varphi}
+{\partial x^{\prime}}\right]=\frac{\partial}{\partial x^{\prime}}
+\left[\frac{\partial\varphi}{\partial x}\right]=
+\frac{\partial\alpha}{\partial x^{\prime}}
+\end{equation}
+\begin{equation}
+\frac{\partial^2\varphi}{\partial x^{\prime 2}}=
+\frac{\partial\alpha}{\partial x}
+\cancelto{1}{\frac{\partial x}{\partial x^{\prime}}} +
+\cancelto{0}{\frac{\partial\alpha}{\partial y}\frac{\partial y}
+{\partial x^{\prime}}}+
+\cancelto{0}{\frac{\partial\alpha}{\partial z}\frac{\partial z}
+{\partial x^{\prime}}}+
+\cancelto{0}{\frac{\partial\alpha}{\partial t}\frac{\partial t}
+{\partial x^{\prime}}}
+\end{equation}
+Substituting Equation 49
+\begin{equation}
+\boxed{
+\frac{\partial^2\varphi}{\partial x^{\prime 2}}=
+\frac{\partial^2\varphi}{\partial x^2}
+}
+\end{equation}
 \end{document}
