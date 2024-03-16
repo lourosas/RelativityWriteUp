@@ -502,4 +502,91 @@ Substituting Equation 49
 \frac{\partial^2\varphi}{\partial x^2}
 }
 \end{equation}
+Using \underline{$\beta$} substitution from 51:
+\begin{equation}
+\frac{\partial^2\varphi}{\partial y^{\prime 2}}=
+\frac{\partial}{\partial y^{\prime}}\left[\frac{\partial\varphi}
+{\partial y^{\prime}}\right]=\frac{\partial}{\partial y^{\prime}}
+\left[\frac{\partial\varphi}{\partial y}\right]=
+\frac{\partial\beta}{\partial y^{\prime}}
+\end{equation}
+\begin{equation}
+\frac{\partial^2\varphi}{\partial y^{\prime 2}}=
+\cancelto{0}{\frac{\partial\beta}{\partial x}\frac{\partial x}
+{\partial y^{\prime}}} +
+\frac{\partial\beta}{\partial y}
+\cancelto{1}{\frac{\partial y}{\partial y^{\prime}}}+
+\cancelto{0}{\frac{\partial\beta}{\partial z}\frac{\partial z}
+{\partial y^{\prime}}} +
+\cancelto{0}{\frac{\partial\beta}{\partial t}\frac{\partial t}
+{\partial y^{\prime}}}
+\end{equation}
+Substituting Equation 50
+\begin{equation}
+\boxed{
+\frac{\partial^2\varphi}{\partial y^{\prime 2}}=
+\frac{\partial^2\varphi}{\partial y^2}
+}
+\end{equation}
+Using \underline{$\gamma$} substitution from equation 53:
+\begin{equation}
+\frac{\partial^2\varphi}{\partial z^{\prime 2}} =
+\frac{\partial}{\partial z^{\prime}}\left[\frac{\partial\varphi}
+{\partial z^{\prime}}\right] = \frac{\partial}{\partial z^{\prime}}
+\left[\frac{\partial\varphi}{\partial z} \right] =
+\frac{\partial\gamma}{\partial z^{\prime}}
+\end{equation}
+\begin{equation}
+\frac{\partial^2\varphi}{\partial z^{\prime 2}}=
+\cancelto{0}{\frac{\partial\gamma}{\partial x}\frac{\partial x}
+{\partial z^{\prime}}} +
+\cancelto{0}{\frac{\partial\gamma}{\partial y}\frac{\partial y}
+{\partial z^{\prime}}} +
+\frac{\partial\gamma}{\partial z}
+\cancelto{1}{\frac{\partial z}{\partial z^{\prime}}} +
+\cancelto{0}{\frac{\partial\gamma}{\partial t}\frac{\partial t}
+{\partial z^{\prime}}}
+\end{equation}
+Substituting Equation 53
+\begin{equation}
+\boxed{
+\frac{\partial^2\varphi}{\partial z^{\prime 2}} =
+\frac{\partial^2\varphi}{\partial z^2}
+}
+\end{equation}
+Using \underline{$\Delta$} substitution from equation 55:
+\begin{equation}
+\frac{\partial^2\varphi}{\partial t^{\prime 2}}=
+\frac{\partial}{\partial t^{\prime}}\left[\frac{\partial\varphi}
+{\partial t^{\prime}}\right]=\frac{\partial\Delta}{\partial t^{\prime}}
+\end{equation}
+\begin{equation}
+\frac{\partial\Delta}{\partial t^{\prime}}=\frac{\partial\Delta}
+{\partial x}\cancelto{v}{\frac{\partial x}{\partial t^{\prime}}} +
+\cancelto{0}{\frac{\partial\Delta}{\partial y}\frac{\partial y}
+{\partial t^{\prime}}} +
+\cancelto{0}{\frac{\partial\Delta}{\partial z}\frac{\partial z}
+{\partial t^{\prime}}} +
+\frac{\partial\Delta}{\partial t}
+\cancelto{1}{\frac{\partial t}{\partial t^{\prime}}}
+\end{equation}
+\begin{equation}
+\frac{\partial\Delta}{\partial t^{\prime}}=\frac{\partial\Delta}
+{\partial t}+v\frac{\partial\Delta}{\partial x}
+\end{equation}
+From Equation 55:
+\begin{equation}
+\boxed{
+\Delta\equiv\frac{\partial\varphi}{\partial t}+v\frac{\partial\varphi}
+{\partial x}
+}
+\end{equation}
+Substituting:
+\begin{equation}
+\frac{\partial\Delta}{\partial t^{\prime}}=\frac{\partial}{\partial t}
+\left[\frac{\partial\varphi}{\partial t}+v\frac{\partial\varphi}
+{\partial x}\right] +
+v\frac{\partial}{\partial x}\left[\frac{\partial\varphi}{\partial t}
++v\frac{\partial\varphi}{\partial x}\right]
+\end{equation}
 \end{document}
